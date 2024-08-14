@@ -34,6 +34,8 @@ async function example() {
 VA`;
   try {
     await printer.raw(raw);
+    printer.cut();
+    printer.execute();
     console.log('Print success.');
   } catch (error) {
     console.error('Print error:', error);
