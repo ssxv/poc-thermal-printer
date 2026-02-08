@@ -11,7 +11,8 @@
     "node": "20.15.1"
   },
   "dependencies": {
+    "@ssxv/node-printer": "^0.1.5",
     "@thiagoelg/node-printer": "^0.6.2",
-    "node-thermal-printer": "^4.4.2"
+    "node-thermal-printer": "^4.6.0"
   }
 }

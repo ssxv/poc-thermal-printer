@@ -2,10 +2,10 @@ POC for printing directly to a USB connected thermal printer
 
 based on:
 1. https://www.npmjs.com/package/node-thermal-printer
-2. https://www.npmjs.com/package/@thiagoelg/node-printer
+2. https://www.npmjs.com/package/@ssxv/node-printer
 
 
-`@thiagoelg/node-printer` uses node-gyp to build binaries. So, depending on node version and OS you'll need native build tools
+`@ssxv/node-printer` uses node-gyp to build binaries. So, depending on node version and OS you'll need native build tools
 
 check:
 
