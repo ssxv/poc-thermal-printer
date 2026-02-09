@@ -1,8 +1,7 @@
-const driver = require("@ssxv/node-printer");
+const driver = require("@ssxv/node-printer-local/printer");
 const { PrinterTypes, ThermalPrinter } = require("node-thermal-printer");
 
 const PRINTER_NAME = "Satyendra-local-receipt-printer"; // Replace with actual printer name
-const PRINTER_IP = "198.162.0.23";
 
 const printer = new ThermalPrinter({
   type: PrinterTypes.EPSON,
@@ -25,8 +24,8 @@ const printRawData = async () => {
   try {
     await printer.raw(raw);
     printer.cut();
-    printer.execute();
-    console.log("Print success.");
+    const job = await printer.execute();
+    console.log("Print success.", job);
   } catch (error) {
     console.error("Print error:", error);
   }
