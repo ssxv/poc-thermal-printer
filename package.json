@@ -1,19 +1,16 @@
 {
-  "name": "poc-thermal-printer",
+  "name": "printer-test",
   "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "volta": {
-    "node": "20.15.1"
-  },
   "dependencies": {
-    "@ssxv/node-printer": "^0.1.6",
-    "@ssxv/node-printer-local": "file://../node-printer",
-    "@thiagoelg/node-printer": "^0.6.2",
+    "@ssxv/node-printer": "file:../node-printer/ssxv-node-printer-1.0.0.tgz",
     "node-thermal-printer": "^4.6.0"
   }
 }
